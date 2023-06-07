@@ -16,18 +16,18 @@ def start_timer():
     seconds = minutes * 60
     countdown(seconds)
 
-# 创建主窗口
+# Create the main window
 root = tk.Tk()
 root.title('Pomodoro Timer')
 
-# 创建标签和输入框
+# Create the label and input box
 time_label = tk.Label(root, text='00:00', font=('Helvetica', 48))
 time_label.pack(pady=10)
 minute_entry = tk.Entry(root, width=10, font=('Helvetica', 24))
 minute_entry.insert(0, '25')
 minute_entry.pack(pady=10)
 
-# 创建按钮
+# Create the button
 start_button = tk.Button(root, text='Start', command=start_timer)
 start_button.pack(pady=10)
 
